@@ -156,7 +156,7 @@
         "tags": [
           "Music Library Albums"
         ],
-        "description": "...",
+        "description": "Create new Album",
         "security": [
           {
             "token": []
@@ -171,19 +171,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "...": {
+                "singer": {
                   "type": "string"
                 },
-                "...": {
+                "album": {
                   "type": "string"
                 },
-                "...": {
+                "imageUrl": {
                   "type": "string"
                 },
-                "...": {
+                "label": {
                   "type": "string"
                 },
-                "...": {
+                "sales": {
                   "type": "string"
                 }
               }
@@ -203,7 +203,7 @@
         }
       }
     },
-    "...": {
+    "data/albums/{id}": {
       "put": {
         "tags": [
           "Music Library Albums"
@@ -216,11 +216,11 @@
         ],
         "parameters": [
           {
-            "name": "...",
+            "name": "id",
             "in": "path",
             "description": "ID of album to update",
             "required": true,
-            "type": "..."
+            "type": "string"
           },
           {
             "name": "album",
@@ -256,7 +256,7 @@
         "tags": [
           "Music Library Albums"
         ],
-        "description": "...",
+        "description": "Delete an album",
         "security": [
           {
             "token": []
@@ -266,7 +266,7 @@
           {
             "name": "id",
             "in": "path",
-            "description": "...",
+            "description": "ID of album to delete",
             "required": true,
             "type": "string"
           }
